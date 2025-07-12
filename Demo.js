@@ -52,6 +52,24 @@ app.get('/bye',(req,res)=>{
 })
 
 //Post route method
+
+app.post('/bye',(req,res)=>{
+    console.log("post route");
+    res.send("post route");
+})
+
+app.post('/postUserDetails',(req,res)=>{
+    console.log("post user details route")
+    res.send('post user details route')
+})
+
+app.put('/updateUserDerails',(req,res)=>{
+    res.send("updated user details Succesfully !!");
+})
+
+app.delete('/deleteUserDetails',(req,res)=>{
+    res.send('user details deleted succesfully..!!')
+})
 app.listen(3000,()=>{
     console.log("your server running. ")
 })
